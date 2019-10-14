@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
 
+
+
+
 //Global variables
 var storyContent = document.getElementById("story-container");
 var i=keys.length;
@@ -26,7 +29,7 @@ $("#prev").click(function prev(){
    
     if (i<keys.length+1 && i>1){
         i=i-1;}else{i=keys.length;}
-        storyContent.innerHTML="<p>"+keys[i-1]+"</p>";
+        storyContent.innerHTML="<p class='mb-5'>"+keys[i-1]+"</p>";
           // Section counter "decreasing"
          if (a<keys.length+1 && a>1){
         a=a-1;}else{a=keys.length;}
