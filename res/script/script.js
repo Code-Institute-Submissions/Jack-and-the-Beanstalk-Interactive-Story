@@ -8,6 +8,7 @@ $(document).ready(function(){
 var storyContent = document.getElementById("story-container");
 var i=keys.length;
 var a=keys.length+1;
+var titleImg = document.getElementById("title-img");
 
 
 
@@ -16,6 +17,7 @@ $("#next").click(function next(){
     if (i<keys.length){
         i=i+1;}else{i=1;}
         storyContent.innerHTML="<p>"+keys[i-1]+"</p>";
+        titleImg.innerHTML=`<img src="res/media/c`+[i]+`.png" class="mt-1 pt-1">`;
         
   // Section counter "increasing"
          if (a<keys.length){
@@ -30,6 +32,7 @@ $("#prev").click(function prev(){
     if (i<keys.length+1 && i>1){
         i=i-1;}else{i=keys.length;}
         storyContent.innerHTML="<p class='mb-5'>"+keys[i-1]+"</p>";
+                titleImg.innerHTML=`<img src="res/media/c`+[i]+`.png" class="mt-1 pt-1">`;
           // Section counter "decreasing"
          if (a<keys.length+1 && a>1){
         a=a-1;}else{a=keys.length;}
