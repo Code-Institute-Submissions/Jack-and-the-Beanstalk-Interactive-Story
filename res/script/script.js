@@ -39,4 +39,10 @@ $("#prev").click(function prev(){
         pn.innerHTML="<p>"+[a]+"</p>"
 });
 
+
+
+
+
 }); //end function document ready
+
+
