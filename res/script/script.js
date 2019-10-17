@@ -14,7 +14,7 @@ var titleImg = document.getElementById("title-img");
 
 
 $("#next").click(function next(){//control button "Next" function
-    if (i<keys.length){
+    if (i<keys.length){  // Code from Web Zone at https://www.youtube.com/watch?v=sQuniQCzNlY //
         i=i+1;}else{i=1;}
         storyContent.innerHTML="<p class='mb-5'><h4>"+keys[i-1]+"</h4></p>";
         titleImg.innerHTML=`<img src="res/media/c`+[i]+`.png" class="mt-1 pt-1">`;
@@ -30,7 +30,7 @@ $("#next").click(function next(){//control button "Next" function
 $("#prev").click(function prev(){//control button "previous" function
    
     if (i<keys.length+1 && i>1){
-        i=i-1;}else{i=keys.length;}
+        i=i-1;}else{i=keys.length;}  // Code from Web Zone at https://www.youtube.com/watch?v=sQuniQCzNlY //
         storyContent.innerHTML="<p class='mb-5'><h4>"+keys[i-1]+"</h4></p>";
                 titleImg.innerHTML=`<img src="res/media/c`+[i]+`.png" class="mt-1 pt-1">`;
           // Section counter "decreasing"
