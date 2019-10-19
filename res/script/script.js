@@ -47,7 +47,21 @@ $(document).ready(function() {
         pn.innerHTML = "<p>" + [a] + "</p>"
     });
 
-  
+    //Text blink function//
+    $("#startStory").delay( 2500 ).animate({ opacity: 0 }, 200, "linear", function() {
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
+
+    });
 
 
     function myFunction(mx) { //fixed contorl button position on desktop view
