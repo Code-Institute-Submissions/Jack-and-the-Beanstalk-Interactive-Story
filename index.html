@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Interactive Frontend Development</title>
+    <title>Jack and the Beanstalk | Interactive Story</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="res/css/style.css" type="text/css" />
@@ -14,34 +14,36 @@
 </head>
 
 <body>
-<!-- Home Button-->
-<div class="sticky-top mt-1 ml-2"><a href="index.html"><button class="btn btn-dark btn-lg"><b>Home</b></button></a></div>
-<!-- /.Home Button-->
-<!--title image-->
-<div class="title-img c-enter" id="title-img"><img src="res/media/title.png" class="mt-2 pt-1"></div>
-<!--/.title image-->
+    <!-- Home Button-->
+    <div class="sticky-top mt-1 ml-2"><a href="index.html"><button class="btn btn-dark btn-lg"><b>Home</b></button></a></div>
+    <!-- /.Home Button-->
+    <!--title image-->
+    <div class="title-img c-enter" id="title-img"><img src="res/media/title.png" class="mt-2 pt-1"></div>
+    <!--/.title image-->
 
-<!--Story text box-->
-<div class="container story-container pt-1 pb-2 mb-5" id="story-container">
-
-    <div class="row">
-        <h5>Jack and the Beanstalk</h5>
+    <!--Story text box-->
+    <div class="container story-container pt-1 pb-2 mb-5" id="story-container">
+        <div class="col mt-3">
+            <h4>Story by: &nbsp<a href="https://www.storynory.com/jack-and-the-beanstalk/" target=_blank>  Storynory.com</a></h4></div>
+    <div class="col">
+            <h4>Images from: &nbsp<a href="http://taleswithgigi.com/tale/25/" target=_blank>taleswithgigi.com</a></h4></div>
+    <div class="col" id="startStory">
+        <h3 class="mt-3">Click next to begin the story </h3>
     </div>
-    <div class="row"><a href="https://www.storynory.com/jack-and-the-beanstalk/" target=_blank> By Storynory.com</a> </div>
-    <div class="row">
-        <h3 class="c-enter mt-3">Click next to begin the story </h3>
     </div>
-</div>
-<!--/.Story text box-->
+    <!--/.Story text box-->
 
-<!--Control buttons & section counter -->
-<div class="m-sp c-enter" id="button-container"><button class="btn btn-dark btn-lg" id="prev"> <- <b>Previous</b></button><button class="btn btn-outline-dark ml-1 mr-1" id="pn">Section</button><button class="btn btn-dark btn-lg" id="next"><b>Next -></b></button>
-    <!--/.Control buttons & section counter -->
+    <!--Control buttons & section counter -->
+    <div class="m-sp c-enter" id="button-container"><button class="btn btn-dark btn-lg" id="prev"> <- <b>Previous</b></button><button class="btn btn-outline-dark ml-1 mr-1" id="pn">Section</button><button class="btn btn-dark btn-lg" id="next"><b>Next -></b></button>
+        <!--/.Control buttons & section counter -->
 
-</div>
-</div>
+    </div>
+    </div>
 </body>
+
+
 <script type="text/javascript" src="res/script/script.js"></script>
-<script type="text/javascript" src="res/script/storyData.js"></script> <!-- Story Data-->
+<script type="text/javascript" src="res/script/storyData.js"></script>
+<!-- Story Data-->
 
 </html>
