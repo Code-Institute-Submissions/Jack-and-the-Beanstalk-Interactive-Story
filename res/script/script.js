@@ -44,11 +44,22 @@ $(document).ready(function() {
             a = a - 1;
         }
         else { a = keys.length; }
-        pn.innerHTML = "<p>" + [a] + "</p>"
+        pn.innerHTML = "<p>" + [a] + "</p>";
     });
 
     //Text blink function//
-    $("#startStory").delay( 2500 ).animate({ opacity: 0 }, 200, "linear", function() {
+    $("#startStory").delay(1500).animate({ opacity: 0 }, 200, "linear", function() {
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 300);
+        $(this).animate({ opacity: 0 }, 400);
+        $(this).animate({ opacity: 1 }, 500);
         $(this).animate({ opacity: 1 }, 300);
         $(this).animate({ opacity: 0 }, 400);
         $(this).animate({ opacity: 1 }, 500);
